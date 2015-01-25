@@ -1,0 +1,23 @@
+
+{% extends "base.html" %}
+
+{% block body %}
+
+        <p>Please login to use this system:</p>
+
+        <form method="POST" action="/login">
+            <table>
+                <tr>
+                    <td>Username:</td> <td><input type="TEXT" name="userid" /></td>
+                </tr>
+                <tr>
+                    <td>Password:</td> <td><input type="PASSWORD" name="passwd" /></td>
+                </tr>
+                <tr>
+                    <td></td><td><input type="SUBMIT" value="Login" /></td>
+                </tr>
+            </table>
+        </form>
+        New user? <a href="/register">Register here</a>.
+
+{% endblock %}

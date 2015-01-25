@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+    <form method="POST" action="/admin">
+        <ol>
+            {% if data is string %}
+                {{data}}
+            {% else %}
+                {% for row in data %}
+                    <li>{{row[0]}} - {{row[2]}}
+                    <input type="CHECKBOX" name="{{row[0]}}" value="{{row[0]}}" checked="checked" /></li>
+                {% endfor %}
+            {% endif %}
+        </ol>
+        <input type="SUBMIT" value="Enable" />
+    </form>
+
+{% endblock %}

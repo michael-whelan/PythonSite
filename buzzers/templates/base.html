@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="/static/buzzers.css"> 
+    </head>
+    <body>
+        <h2>{{ title }}</h2>
+        {% block body %}
+
+        {% endblock %}
+        <p>
+        <span class="copyright">Copyright (c) 2014 by Bahamas Buzzers.</span> 
+        <span class="slogan">Come buzz with us.
+        {% if show_logout %}
+            [<a href="/logout">Logout</a>]
+        {% endif %}
+        </span>
+        </p>
+    </body>
+</html>

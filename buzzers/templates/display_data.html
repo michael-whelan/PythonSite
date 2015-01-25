@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<table>
+    <tr>
+        <th>{{ columns[0] }}</th><th>{{ columns[1] }}</th>
+    </tr>
+
+{% for d in data %}
+    <tr>
+        <td>{{ d[0] }}</td>
+        <td>
+            {% if d[1] is string %}
+                {{ d[1] }}
+            {% else %}
+                {{ d[1]|join(', ') }}
+            {% endif %}
+        </td>
+    </tr>
+{% endfor %}
+</table>
+
+<br />
+Return to the <a href="/">main menu</a>.
+
+{% endblock %}

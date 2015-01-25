@@ -1,0 +1,32 @@
+
+{% extends "base.html" %}
+
+{% block body %}
+
+        <p>Please register to use this system:</p>
+
+        <form method="POST" action="/register">
+            <table>
+                <tr>
+                    <td>Username:</td> <td><input type="TEXT" name="userid" /></td>
+                </tr>
+                <tr>
+                    <td>Password:</td> <td><input type="PASSWORD" name="passwd" /></td>
+                </tr>
+                <tr>
+                    <td>Type:</td>
+                    <td>
+                        <select name='usertype'>
+                            <option value="crew">Booking Crew</option>
+                            <option value="team">Departures Team</option>
+                            <option value="pilot">Pilot</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td><td><input type="SUBMIT" value="Register" /></td>
+                </tr>
+            </table>
+        </form>
+
+{% endblock %}

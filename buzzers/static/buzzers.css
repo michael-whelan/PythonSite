@@ -1,0 +1,41 @@
+body {
+  font-family:      Verdana, Geneva, Arial, sans-serif;
+  font-size:        medium;
+  background-color: #CCFFFF;
+}
+a {
+  text-decoration:  none; 
+  font-weight:      600; 
+  color:            #3366CC;
+}
+a:hover {
+  text-decoration:  underline;
+}
+a img {
+  border:           0;
+}
+h2 {
+  font-weight:      normal;
+  color:            #3366CC;
+  font-size:        150%;
+}
+table {
+  margin-left:      20px;
+  margin-right:     20px;
+  caption-side:     bottom;
+  border-collapse:  collapse;
+  
+}
+td, th {
+  padding:          5px;
+  text-align:       left;
+}
+.copyright {
+  font-size:        90%;
+  font-style:       italic;
+  color:            #3366CC;
+}
+.slogan {
+  font-size:        90%;
+  font-style:       italic;
+}

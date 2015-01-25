@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block body %}
+<p>
+Please make your selection ({{logged_in_as}}):
+
+</p>
+<form method="GET" action="/pilot">
+    <input type="SUBMIT" value="Pilots Data">
+</form>
+<form method="GET" action="/team">
+    <input type="SUBMIT" value="Departures Team Data">
+</form>
+<form method="GET" action="/crew">
+    <input type="SUBMIT" value="Booking Crew Data">
+</form>
+
+{% endblock %}
